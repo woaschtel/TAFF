@@ -1,3 +1,12 @@
+"""
+
+    Taff by woastel
+
+
+"""
+
+
+
 import sys
 import os
 from PyQt5 import QtWidgets
