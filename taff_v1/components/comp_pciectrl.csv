@@ -1,0 +1,6 @@
+name,info,controllertyp,maxtemp
+X540-T2,10GB intel LAN,LAN,95
+Intel I350,1GB,LAN,40
+fiber channel 1,fc ctrl,FC,83
+gird K1,GRAFIK,GRAFIK,112
+gird K2,the new gpu,GRAFIK,130

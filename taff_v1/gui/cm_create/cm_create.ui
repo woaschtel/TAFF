@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1415</width>
+    <height>836</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget_5" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>390</width>
+       <height>700</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>390</width>
+       <height>9000</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_17">
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_24">
+        <property name="styleSheet">
+         <string notr="true">font: 63 14pt &quot;Ubuntu&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Create climatic measurement</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>Create a climatic Measurement entry in the database</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btn_loadData">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(210, 255, 229);
+font: 63 11pt &quot;FreeSans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>load data from database</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>438</width>
+          <height>48</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="5" column="1">
+          <widget class="QComboBox" name="comboBox_testloadid"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>Datum:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDateTimeEdit" name="dateTimeEdit">
+           <property name="displayFormat">
+            <string>yyyy.MM.dd-HH:mm:ss</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_name">
+           <property name="text">
+            <string>Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_name"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_info">
+           <property name="text">
+            <string>Info:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_info"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>EUT: (id)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="comboBox_eutid"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Test Load: (id)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>SensorTyp List: (id)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QComboBox" name="comboBox_sensortyplistid"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_83">
+           <property name="text">
+            <string>Ambient Temp.: (id)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QComboBox" name="comboBox_ambtempid"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QWidget" name="widget_8" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="2" column="0">
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);</string>
+           </property>
+           <property name="title">
+            <string>Add Measurment (new max name)</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="lineEdit_maxColumnName">
+              <property name="text">
+               <string>max</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" rowspan="2">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Sensor Max Value</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLineEdit" name="lineEdit_sensornameColumnName">
+              <property name="text">
+               <string>name</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0" rowspan="2">
+             <widget class="QLabel" name="label_19">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>SensorName</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QCheckBox" name="checkBox_addfromFileClumnname">
+              <property name="text">
+               <string>add_measurment and define new </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Add Measurement (with max_id, name_id)</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboBox_sensorNameid"/>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Sensor Max Value (ID)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>SensorName (ID)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="comboBox_sensorMaxValueid"/>
+            </item>
+           </layout>
+           <zorder>comboBox_sensorNameid</zorder>
+           <zorder>comboBox_sensorMaxValueid</zorder>
+           <zorder>label_6</zorder>
+           <zorder>label_5</zorder>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QTextBrowser" name="textBrowser">
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;create a measurement&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Option A:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;with id s&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Option B:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;from csv file with the column names&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QWidget" name="widget_11" native="true">
+        <layout class="QGridLayout" name="gridLayout_12">
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="lineEdit_txtSpaltValue">
+           <property name="text">
+            <string>temp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="btn_openfile">
+           <property name="text">
+            <string>open File</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>116</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>Spalten name im file (z.B. value)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="2">
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="3">
+          <widget class="QPushButton" name="btn_addMeasurment">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>add measurement</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="3">
+          <widget class="QLineEdit" name="lineEdit_fileName">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="4">
+          <widget class="QLabel" name="label_20">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Select a file with the temp Values</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_22">
+      <item row="0" column="0" colspan="2">
+       <widget class="QToolBox" name="toolBox_2">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="page_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>983</width>
+           <height>705</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Read Me</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_16">
+          <item row="0" column="0">
+           <widget class="QTextEdit" name="textEdit">
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; text-decoration: underline;&quot;&gt;  Create Climatic  &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; text-decoration: underline;&quot;&gt;  Measurment GUI  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:36pt; font-weight:600; text-decoration: underline;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;			import values by csv-File&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Beschreibung:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Anforderungen an die CSV datei:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Delimiter = &amp;quot;,&amp;quot;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Mindestensanzahl Zeilen = 61&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Zeile 1: (Head Line der CSV Datei)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- SpalteA	name	= Name des Sensors&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- SpalteB	max	= Maximalzulaessiger Wert des Sensors&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- SpalteC	value	= Gemessennerwert des Sensors&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Zeile 2 - 61: (Werte Zeilen)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	Die werte von Splate A,B,C,&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Zeile 62&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	in dieser Zeile solte bei name(SpalteA) &amp;quot;ENDE&amp;quot; stehen&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	damit die CSV Datei auch sicher mindesten 61 Zeilen gross ist.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Sebastian Schilling&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1026</width>
+           <height>692</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Climatic Measurment Data</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_19">
+          <item row="0" column="0">
+           <widget class="QWidget" name="widget_3" native="true">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="1" column="0">
+              <widget class="QTabWidget" name="tabWidget">
+               <property name="font">
+                <font>
+                 <family>Courier 10 Pitch</family>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="currentIndex">
+                <number>5</number>
+               </property>
+               <widget class="QWidget" name="tab">
+                <attribute name="title">
+                 <string>Measurments</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_14">
+                 <item row="0" column="0">
+                  <widget class="QListWidget" name="listWidget"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_eut">
+                <attribute name="title">
+                 <string>EUT</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="1" column="0">
+                  <widget class="QListWidget" name="list_eut">
+                   <item>
+                    <property name="text">
+                     <string>Listen font = Courier 10 Pitch, 11, regular</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string>TextLabel</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_testLoad">
+                <attribute name="title">
+                 <string>Test Load</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="0" column="0">
+                  <widget class="QListWidget" name="list_testLoad"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_sensorName">
+                <attribute name="title">
+                 <string>Sensor Name</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>TextLabel</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QListWidget" name="list_sensorName"/>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QWidget" name="widget_4" native="true">
+                   <layout class="QGridLayout" name="gridLayout_23">
+                    <item row="0" column="0" rowspan="2">
+                     <widget class="QFrame" name="frame_4">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_8">
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_13">
+                         <property name="text">
+                          <string>NAME: (of sensor-name-list)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLabel" name="label_14">
+                         <property name="text">
+                          <string>File Name: (load from file)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLineEdit" name="lineEdit_sensorName_name">
+                         <property name="text">
+                          <string>namelist name</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_sensorName_CSV">
+                         <property name="text">
+                          <string>m1.csv</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_17">
+                         <property name="text">
+                          <string>Delimiter of the File:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLabel" name="label_27">
+                         <property name="text">
+                          <string>Column Name: </string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLineEdit" name="lineEdit_sensorName_fileDelimiter">
+                         <property name="text">
+                          <string>,</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="lineEdit_sensorName_fileColumn">
+                         <property name="text">
+                          <string>name</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" rowspan="2">
+                     <spacer name="horizontalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="btn_createSensorName">
+                      <property name="text">
+                       <string>Create Sensor Name</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_sensorMax">
+                <attribute name="title">
+                 <string>Sensor Max</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_11">
+                 <item row="2" column="0">
+                  <widget class="QWidget" name="widget_9" native="true">
+                   <layout class="QGridLayout" name="gridLayout_10">
+                    <item row="1" column="2">
+                     <widget class="QLineEdit" name="lineEdit_sensormaxCSV">
+                      <property name="text">
+                       <string>m1.csv</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="4">
+                     <widget class="QPushButton" name="btn_createSensorMax">
+                      <property name="text">
+                       <string>Create Sensor Max</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_sensormaxlisname">
+                      <property name="text">
+                       <string>name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="label_4">
+                      <property name="text">
+                       <string>Load from File: (datei name)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>Name: (sensorMaxList)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3">
+                     <spacer name="horizontalSpacer_3">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>TextLabel</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QListWidget" name="list_sensorMax">
+                   <property name="font">
+                    <font>
+                     <family>Courier 10 Pitch</family>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_sensorTypList">
+                <attribute name="title">
+                 <string>Sensor Typ List</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_21">
+                 <item row="0" column="0">
+                  <widget class="QTabWidget" name="tabWidget_2">
+                   <property name="currentIndex">
+                    <number>1</number>
+                   </property>
+                   <widget class="QWidget" name="tab_3">
+                    <attribute name="title">
+                     <string>View Typ List</string>
+                    </attribute>
+                    <layout class="QGridLayout" name="gridLayout_40">
+                     <item row="0" column="0">
+                      <widget class="QFrame" name="frame_16">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_39">
+                        <item row="1" column="0">
+                         <widget class="QListWidget" name="list_sensorTypListofLists"/>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_82">
+                          <property name="text">
+                           <string>List of all SensorTyp Lists:</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="tab_4">
+                    <attribute name="title">
+                     <string>Create Typ List</string>
+                    </attribute>
+                    <layout class="QGridLayout" name="gridLayout_15">
+                     <item row="0" column="0">
+                      <widget class="QFrame" name="frame_5">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_37">
+                        <item row="1" column="0">
+                         <widget class="QWidget" name="widget_10" native="true">
+                          <layout class="QGridLayout" name="gridLayout_36">
+                           <item row="1" column="4">
+                            <widget class="QFrame" name="frame_14">
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_34">
+                              <item row="0" column="0">
+                               <widget class="QLabel" name="label_77">
+                                <property name="text">
+                                 <string>41</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="1">
+                               <widget class="QComboBox" name="comboBox_41"/>
+                              </item>
+                              <item row="1" column="1">
+                               <widget class="QComboBox" name="comboBox_42"/>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="QComboBox" name="comboBox_43"/>
+                              </item>
+                              <item row="3" column="1">
+                               <widget class="QComboBox" name="comboBox_44"/>
+                              </item>
+                              <item row="4" column="1">
+                               <widget class="QComboBox" name="comboBox_45"/>
+                              </item>
+                              <item row="5" column="1">
+                               <widget class="QComboBox" name="comboBox_46"/>
+                              </item>
+                              <item row="6" column="1">
+                               <widget class="QComboBox" name="comboBox_47"/>
+                              </item>
+                              <item row="7" column="1">
+                               <widget class="QComboBox" name="comboBox_48"/>
+                              </item>
+                              <item row="8" column="1">
+                               <widget class="QComboBox" name="comboBox_49"/>
+                              </item>
+                              <item row="9" column="1">
+                               <widget class="QComboBox" name="comboBox_50"/>
+                              </item>
+                              <item row="9" column="0">
+                               <widget class="QLabel" name="label_78">
+                                <property name="text">
+                                 <string>50</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item row="1" column="1">
+                            <widget class="QFrame" name="frame_8">
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_31">
+                              <item row="1" column="1">
+                               <widget class="QComboBox" name="comboBox_12"/>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="QComboBox" name="comboBox_13"/>
+                              </item>
+                              <item row="0" column="1">
+                               <widget class="QComboBox" name="comboBox_11"/>
+                              </item>
+                              <item row="3" column="1">
+                               <widget class="QComboBox" name="comboBox_14"/>
+                              </item>
+                              <item row="4" column="1">
+                               <widget class="QComboBox" name="comboBox_15"/>
+                              </item>
+                              <item row="5" column="1">
+                               <widget class="QComboBox" name="comboBox_16"/>
+                              </item>
+                              <item row="6" column="1">
+                               <widget class="QComboBox" name="comboBox_17"/>
+                              </item>
+                              <item row="7" column="1">
+                               <widget class="QComboBox" name="comboBox_18"/>
+                              </item>
+                              <item row="8" column="1">
+                               <widget class="QComboBox" name="comboBox_19"/>
+                              </item>
+                              <item row="9" column="1">
+                               <widget class="QComboBox" name="comboBox_20"/>
+                              </item>
+                              <item row="9" column="0">
+                               <widget class="QLabel" name="label_43">
+                                <property name="text">
+                                 <string>20</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="0">
+                               <widget class="QLabel" name="label_42">
+                                <property name="text">
+                                 <string>11</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QFrame" name="frame_7">
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_30">
+                              <item row="2" column="2">
+                               <widget class="QComboBox" name="comboBox_3"/>
+                              </item>
+                              <item row="3" column="2">
+                               <widget class="QComboBox" name="comboBox_4"/>
+                              </item>
+                              <item row="4" column="2">
+                               <widget class="QComboBox" name="comboBox_5"/>
+                              </item>
+                              <item row="9" column="0">
+                               <widget class="QLabel" name="label_39">
+                                <property name="text">
+                                 <string>Sendor 10</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="1" column="2">
+                               <widget class="QComboBox" name="comboBox_2"/>
+                              </item>
+                              <item row="5" column="2">
+                               <widget class="QComboBox" name="comboBox_6"/>
+                              </item>
+                              <item row="6" column="2">
+                               <widget class="QComboBox" name="comboBox_7"/>
+                              </item>
+                              <item row="7" column="2">
+                               <widget class="QComboBox" name="comboBox_8"/>
+                              </item>
+                              <item row="8" column="2">
+                               <widget class="QComboBox" name="comboBox_9"/>
+                              </item>
+                              <item row="9" column="2">
+                               <widget class="QComboBox" name="comboBox_10"/>
+                              </item>
+                              <item row="0" column="0">
+                               <widget class="QLabel" name="label_28">
+                                <property name="text">
+                                 <string>Sensor 1</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="2">
+                               <widget class="QComboBox" name="comboBox"/>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item row="1" column="3">
+                            <widget class="QFrame" name="frame_13">
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_33">
+                              <item row="0" column="0">
+                               <widget class="QLabel" name="label_46">
+                                <property name="text">
+                                 <string>31</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="1">
+                               <widget class="QComboBox" name="comboBox_31"/>
+                              </item>
+                              <item row="1" column="1">
+                               <widget class="QComboBox" name="comboBox_32"/>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="QComboBox" name="comboBox_33"/>
+                              </item>
+                              <item row="3" column="1">
+                               <widget class="QComboBox" name="comboBox_34"/>
+                              </item>
+                              <item row="4" column="1">
+                               <widget class="QComboBox" name="comboBox_35"/>
+                              </item>
+                              <item row="5" column="1">
+                               <widget class="QComboBox" name="comboBox_36"/>
+                              </item>
+                              <item row="6" column="1">
+                               <widget class="QComboBox" name="comboBox_37"/>
+                              </item>
+                              <item row="7" column="1">
+                               <widget class="QComboBox" name="comboBox_38"/>
+                              </item>
+                              <item row="8" column="1">
+                               <widget class="QComboBox" name="comboBox_39"/>
+                              </item>
+                              <item row="9" column="1">
+                               <widget class="QComboBox" name="comboBox_40"/>
+                              </item>
+                              <item row="9" column="0">
+                               <widget class="QLabel" name="label_76">
+                                <property name="text">
+                                 <string>40</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item row="1" column="2">
+                            <widget class="QFrame" name="frame_9">
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_32">
+                              <item row="0" column="0">
+                               <widget class="QLabel" name="label_44">
+                                <property name="text">
+                                 <string>21</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="1">
+                               <widget class="QComboBox" name="comboBox_21"/>
+                              </item>
+                              <item row="1" column="1">
+                               <widget class="QComboBox" name="comboBox_22"/>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="QComboBox" name="comboBox_23"/>
+                              </item>
+                              <item row="3" column="1">
+                               <widget class="QComboBox" name="comboBox_24"/>
+                              </item>
+                              <item row="4" column="1">
+                               <widget class="QComboBox" name="comboBox_25"/>
+                              </item>
+                              <item row="5" column="1">
+                               <widget class="QComboBox" name="comboBox_26"/>
+                              </item>
+                              <item row="6" column="1">
+                               <widget class="QComboBox" name="comboBox_27"/>
+                              </item>
+                              <item row="7" column="1">
+                               <widget class="QComboBox" name="comboBox_28"/>
+                              </item>
+                              <item row="8" column="1">
+                               <widget class="QComboBox" name="comboBox_29"/>
+                              </item>
+                              <item row="9" column="1">
+                               <widget class="QComboBox" name="comboBox_30"/>
+                              </item>
+                              <item row="9" column="0">
+                               <widget class="QLabel" name="label_45">
+                                <property name="text">
+                                 <string>30</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item row="1" column="5">
+                            <widget class="QFrame" name="frame_15">
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QGridLayout" name="gridLayout_35">
+                              <item row="0" column="0">
+                               <widget class="QLabel" name="label_79">
+                                <property name="text">
+                                 <string>51</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="0" column="1">
+                               <widget class="QComboBox" name="comboBox_51"/>
+                              </item>
+                              <item row="1" column="1">
+                               <widget class="QComboBox" name="comboBox_52"/>
+                              </item>
+                              <item row="2" column="1">
+                               <widget class="QComboBox" name="comboBox_53"/>
+                              </item>
+                              <item row="3" column="1">
+                               <widget class="QComboBox" name="comboBox_54"/>
+                              </item>
+                              <item row="4" column="1">
+                               <widget class="QComboBox" name="comboBox_55"/>
+                              </item>
+                              <item row="5" column="1">
+                               <widget class="QComboBox" name="comboBox_56"/>
+                              </item>
+                              <item row="6" column="1">
+                               <widget class="QComboBox" name="comboBox_57"/>
+                              </item>
+                              <item row="7" column="1">
+                               <widget class="QComboBox" name="comboBox_58"/>
+                              </item>
+                              <item row="8" column="1">
+                               <widget class="QComboBox" name="comboBox_59"/>
+                              </item>
+                              <item row="9" column="1">
+                               <widget class="QComboBox" name="comboBox_60"/>
+                              </item>
+                              <item row="9" column="0">
+                               <widget class="QLabel" name="label_80">
+                                <property name="text">
+                                 <string>60</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_81">
+                          <property name="text">
+                           <string>Define the Sensor Type List</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QFrame" name="frame_6">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_29">
+                        <item row="0" column="0">
+                         <widget class="QLineEdit" name="lineEdit_createSensorTypList2_name"/>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QPushButton" name="btn_createSensorTypList2">
+                          <property name="text">
+                           <string>PushButton</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btn_exit">
+        <property name="text">
+         <string>EXIT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
