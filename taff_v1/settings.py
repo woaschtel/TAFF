@@ -1,10 +1,6 @@
 """
  Settings File:
-     here can set the settings of the TAFF
-
-     lalalal
-
-
+     here you can set the settings of the TAFF
 
 """
 
